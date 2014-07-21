@@ -508,14 +508,14 @@ body {
 
 #overview-area {
     background: url(./imgs/overview.jpg) top center no-repeat;
-    height:8304px;
+    height:7437px;
     margin: 0 auto;
     position: relative;
 }
 
 #function-area {
     background: url(./imgs/function.jpg) top center no-repeat;
-    height:12475px;
+    height:4871px;
     margin: 0 auto;
     position: relative;
 }
@@ -547,6 +547,25 @@ body {
 #nav-img li {
     display: inline-block;
     margin-left: 22px;
+    vertical-align:top;
+}
+
+.introbox{
+  width:296px;
+  height:165px;
+  text-align:center;
+  background-color:#ececec;
+  border-radius:8px;
+}
+.introbox .title{
+  font-size:26px;
+  color:#00a0ff;
+  padding:20px 0;
+}
+.introbox .content{
+  font-size:16px;
+  color:#3c3c3c;
+  margin-bottom:10px;
 }
 
 #footer-wrapper {
