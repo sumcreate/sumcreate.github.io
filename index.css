@@ -512,6 +512,42 @@ body {
     position: relative;
 }
 
+#about-area {
+  height: 400px;
+  width:1000px;
+  margin:40px auto;
+  position: relative;
+}
+
+#about-area h3 {
+  font-size:24px;
+  padding:3px 0;
+  width:97px;
+  border-bottom:3px solid #46b5d4;
+}
+
+#about-area p {
+  margin-bottom:31px;
+  max-width:580px; 
+}
+
+#about-area .about-team {
+  display:inline-block;
+  width:642px;
+  vertical-align:top;
+}
+
+#about-area .concat {
+  display:inline-block;
+  vertical-align:top;
+}
+
+#about-area .concat strong,
+#about-area .concat img {
+  vertical-align:top;
+}
+
+
 #overview-area {
     background: url(./imgs/overview.jpg) top center no-repeat;
     height:7437px;
@@ -649,10 +685,12 @@ body {
 }
 
 #footer-wrapper {
-    background: url(./imgs/footer.png) repeat-x;
-    height: 216px;
-    color: #8c8c8c;
-    font-size: 0;
+  background: url(./imgs/footer.png) repeat-x;
+  text-align:center;
+  height: 216px;
+  color: #8c8c8c;
+  font-size: 0;
+  overflow:hidden;
 }
 
 .nav-column {
@@ -678,9 +716,47 @@ body {
     margin-bottom: 10px;
 }
 
-#footer-left-nav {
-    margin-left: 60px;
-    border-right: 1px solid rgb(53, 53, 53);
+#footer {
+  text-align:center;
+  margin:30px auto 30px auto;
+  position:relative;
+}
+
+#footer a{
+  color:#c9c9c9;
+  text-decoration:none;
+}
+
+.footer-header{
+  width:280px;
+  margin:0 auto 0 auto;
+  padding:10px;
+  border-bottom: 1px solid rgb(53, 53, 53);
+  font-size:24px;
+}
+
+.footer-item{
+  font-size:16px;
+  width:280px;
+  padding-top:15px;
+  margin:0 auto;
+}
+
+.footer-border-bottom{
+  border-top: 1px solid rgb(104, 104, 104);
+}
+
+#footer .qrcode{
+  position:absolute;
+  top:-10px;
+  right:20px;
+  padding:10px 10px 0 10px;
+  background:#FFF;
+}
+
+#footer .qrcode h6{
+  margin:5px auto;
+  font-size:16px;
 }
 
 #online-call {
@@ -689,19 +765,6 @@ body {
 
 #phone-number {
     margin-bottom: 18px;
-}
-
-#footer-connact, #footer-left-nav {
-    display: inline-block;
-    vertical-align: top;
-    height: 168px;
-    font-size: 14px;
-}
-
-#footer-connact {
-    border-left: 1px solid rgb(104, 104, 104);
-    width: 290px;
-    text-align: center;
 }
 
 #copyright {
