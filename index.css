@@ -540,6 +540,7 @@ body {
 #about-area .concat {
   display:inline-block;
   vertical-align:top;
+  width:350px;
 }
 
 #about-area .concat strong,
@@ -752,6 +753,7 @@ body {
   right:20px;
   padding:10px 10px 0 10px;
   background:#FFF;
+  opacity:0.5;
 }
 
 #footer .qrcode h6{
