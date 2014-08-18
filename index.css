@@ -522,7 +522,7 @@ body {
 #about-area h3 {
   font-size:24px;
   padding:3px 0;
-  width:97px;
+  width:100px;
   border-bottom:3px solid #46b5d4;
 }
 
@@ -533,13 +533,16 @@ body {
 
 #about-area .about-team {
   display:inline-block;
-  width:642px;
+  width:580px;
+  border-right:1px solid #cfcfcf;
+  padding-right:31px;
   vertical-align:top;
 }
 
 #about-area .concat {
   display:inline-block;
   vertical-align:top;
+  padding-left:31px;
   width:350px;
 }
 
@@ -548,6 +551,9 @@ body {
   vertical-align:top;
 }
 
+#about-area .concat strong{
+  margin-right:10px;
+}
 
 #overview-area {
     background: url(./imgs/overview.jpg) top center no-repeat;
