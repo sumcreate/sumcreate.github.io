@@ -2,98 +2,131 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>商城</title>
+    <title>精品推荐</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <style type="text/css" media="all">
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
     </style>
     <style type="text/css" media="all">
-      /*** default is 320 ***/
       body{
         text-align:center;
         font-family:STHeiti,"Microsoft YaHei", tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
       }
-
       .container{
         margin:0 auto;
         max-width:320px;
-        padding:0 6px;
         width:100%;
         text-align:left;
       }
-      ul{
-        list-style:none;
-        margin:0;
-        padding:0;
-      }
       img{
-        width:150px;
-        height:150px;
+        width:148px;
+        height:148px;
       }
-      .imgholder,.good-info{
-        display:inline-block;
+      .imgholder{
+        height:148px;
+      }
+      .row .good:nth-child(2){
+        margin-left:4px;
       }
       .good{
-        padding:15px 0;
-        display:block;
+        width:148px;
+        margin-left:6px;
+        display:inline-block;
         text-decoration:none;
-        border-bottom:1px solid #36c2fa;
+        border:1px solid #A7A7A7;
       }
-      .good-info{
-        width:126px;
+      .row{
+        margin:6px 0;
+      }
+      .price,.des{
+        display:block;
         font-size:12px;
-        color:#5f5f5f;
-        margin-top:1px;
-        margin-left:12px;
+        padding:0 12px;
         vertical-align:top;
       }
       .des{
-        margin-bottom:16px;
-        line-height:1.5em;
+        color:#5f5f5f;
+        line-height:1.1em;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size:15px;
+      }
+      .price{
+        background-color:#4ac2ff;
       }
       .sale{
-        font-size:18px;
-        margin-bottom:2px;
+       height:36px;
+       line-height:36px;
+       text-align:center;
+      }
+      .sale .symbol{
+       color:#9ae2ff;
+       font-size:15px;
       }
       .sale .num{
-        color:#47c1ff;
-      }
-      .origin{
-       font-weight: 400!important;
-      }
-      .origin .num{
-       text-decoration:line-through;
+       color:#FFF;
+       font-size:20px;
+       text-align:center;
        font-family: verdana,arial;
        font-style: normal;
       }
       @media only screen and (min-width:640px){
-        .container{
-          margin:0 auto;
-          max-width:640px;
-          padding:0 12px;
-          width:100%;
-          text-align:left;
-        }
-        img{
-          width:300px;
-          height:300px;
-        }
-        .good{
-          margin:30px 0;
-        }
-        .good-info{
-          width:252px;
-          font-size:24px;
-          margin-top:2px;
-          margin-left:24px;
-        }
-        .des{
-          margin-bottom:32px;
-        }
-        .sale{
-          font-size:36px;
-          margin-bottom:4px;
-        }
+      .container{
+        margin:0 auto;
+        max-width:640px;
+        padding:0 6px;
+        width:100%;
+        text-align:left;
+      }
+      img{
+        width:298px;
+        height:298px;
+      }
+      .imgholder{
+        height:298px;
+      }
+      .good{
+        width:298px;
+        margin-left:13px;
+        display:inline-block;
+        text-decoration:none;
+        border:1px solid #A7A7A7;
+      }
+      .row{
+        display:block;
+        margin:13px 0;
+      }
+      .price,.des{
+        display:block;
+        font-size:12px;
+        padding:0 24px;
+        vertical-align:top;
+      }
+      .des{
+        color:#5f5f5f;
+        padding-top:20px;
+        padding-bottom:20px;
+        font-size:30px;
+      }
+      .price{
+        background-color:#4ac2ff;
+      }
+      .sale{
+       height:72px;
+       line-height:72px;
+       text-align:center;
+      }
+      .sale .symbol{
+       color:#9ae2ff;
+       font-size:30px;
+      }
+      .sale .num{
+       color:#FFF;
+       font-size:40px;
+       text-align:center;
+       font-family: verdana,arial;
+       font-style: normal;
+      }
       }
     </style>
   </head>
@@ -105,32 +138,30 @@
           <div class="imgholder">
             <img src="<%imglink%>" alt="">
           </div>
-          <div class="good-info">
-            <div class="des"><%des%></div>
-            <div class="price">
+          <div class="price">
               <div class="sale">
                 <span class="symbol">￥</span>
                 <span class="num"><%sale%></span>
                </div>
-              <div class="origin">
-                <span class="symbol">原价</span>
-                <span class="num"><%origin%></span>
-              </div>
-            </div>
           </div>
+          <div class="des"><%des%></div>
       </a>
     </script>
     <script>
-var browser = (function() {
-  var u = navigator.userAgent
-  return {
-    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
-    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
-  }
-})()
-
 var data = {
   ios: [{
+    link: 'http://item.taobao.com/item.htm?spm=a230r.1.0.0.TZRkLA&id=42050680607&ns=1&abbucket=10#detail',
+    imglink: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1ir_7GFXXXXbHXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+    des: 'air story标准型电池',
+    origin: '',
+    sale: '80.00'
+  }, {
+    link: 'http://item.taobao.com/item.htm?spm=a230r.1.0.0.TZRkLA&id=42050468204&ns=1&abbucket=10#detail',
+    imglink: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1lbz7GFXXXXb2XFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+    des: 'air story基础型滤网',
+    origin: '',
+    sale: '40.00'
+  }, {
     link: 'http://s.click.taobao.com/t?e=m%3D2%26s%3DYU%2BTNlXvfF0cQipKwQzePOeEDrYVVa64Qih%2F7PxfOKS5VBFTL4hn2SOiiuezDuszrumJQoe%2FxcN4%2BDUoFL30LER2%2FcAgy3eptkjwnoSGqUBi8N%2BXN7AYzTQ38ghBkTNTWGnUgpJO7%2B4Qr4Mvpe6v0iGFCzYOOqAQ',
     imglink: 'http://img01.taobaocdn.com/bao/uploaded/i1/10800043045868330/T1h9k2FbpdXXXXXXXX_!!0-item_pic.jpg_430x430.jpg',
     des: '特价 双IC芯片方案 10.8V11.1V12V 12.6V2A锂电池充电器 充满变灯',
@@ -144,6 +175,18 @@ var data = {
     sale: '36.00'
   }],
   android: [{
+    link: 'http://item.taobao.com/item.htm?spm=a230r.1.0.0.TZRkLA&id=42050680607&ns=1&abbucket=10#detail',
+    imglink: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1ir_7GFXXXXbHXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+    des: 'air story标准型电池',
+    origin: '',
+    sale: '80.00'
+  }, {
+    link: 'http://item.taobao.com/item.htm?spm=a230r.1.0.0.TZRkLA&id=42050468204&ns=1&abbucket=10#detail',
+    imglink: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1lbz7GFXXXXb2XFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+    des: 'air story基础型滤网',
+    origin: '',
+    sale: '40.00'
+  }, {
     link: 'http://s.click.taobao.com/t?e=m%3D2%26s%3DScwm2iH5QBQcQipKwQzePOeEDrYVVa64Qih%2F7PxfOKS5VBFTL4hn2Z%2Fu6XUKtBNX6EFRCN7EKmx4%2BDUoFL30LP9HPpEiURghHI0qbQNuPotHxejAxTjXYjQ38ghBkTNTWGnUgpJO7%2B4Qr4Mvpe6v0iGFCzYOOqAQ',
     imglink: 'http://img01.taobaocdn.com/bao/uploaded/i1/10800043045868330/T1h9k2FbpdXXXXXXXX_!!0-item_pic.jpg_430x430.jpg',
     des: '特价 双IC芯片方案 10.8V11.1V12V 12.6V2A锂电池充电器 充满变灯',
@@ -157,6 +200,18 @@ var data = {
     sale: '36.00'
   }],
   def: [{
+    link: 'http://item.taobao.com/item.htm?spm=a230r.1.0.0.TZRkLA&id=42050680607&ns=1&abbucket=10#detail',
+    imglink: 'http://gd4.alicdn.com/bao/uploaded/i4/TB1ir_7GFXXXXbHXFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+    des: 'air story标准型电池',
+    origin: '',
+    sale: '80.00'
+  }, {
+    link: 'http://item.taobao.com/item.htm?spm=a230r.1.0.0.TZRkLA&id=42050468204&ns=1&abbucket=10#detail',
+    imglink: 'http://gd1.alicdn.com/bao/uploaded/i1/TB1lbz7GFXXXXb2XFXXXXXXXXXX_!!0-item_pic.jpg_400x400.jpg',
+    des: 'air story基础型滤网',
+    origin: '',
+    sale: '40.00'
+  }, {
     link: 'http://baidu.com',
     imglink: 'http://dummyimage.com/150x100/b3b1b3/ffffff.png&text=ooo',
     des: '先科 带开关 一拖三点烟器汽车双USB电源一拖二分配器 车载点烟器',
@@ -170,6 +225,14 @@ var data = {
     sale: '36.00-42.00'
   }]
 }
+
+var browser = (function() {
+  var u = navigator.userAgent
+  return {
+    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
+  }
+})()
 
 function tpl(tmpl, data) {
   return tmpl.replace(/<%(.+?)%>/g, function(all, key) {
@@ -186,8 +249,14 @@ if (browser.ios) {
 }
 
 var tmpl = document.getElementById('tmpl').innerText
+html += '<div class="row">'
 html += tpl(tmpl, data[dataKey][0])
 html += tpl(tmpl, data[dataKey][1])
+html += '</div>'
+html += '<div class="row">'
+html += tpl(tmpl, data[dataKey][2])
+html += tpl(tmpl, data[dataKey][3])
+html += '</div>'
 
 document.getElementById('container').innerHTML = html
     </script>
