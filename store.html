@@ -14,7 +14,6 @@
       }
       .container{
         margin:0 auto;
-        max-width:320px;
         width:100%;
         text-align:left;
       }
@@ -25,19 +24,19 @@
       .imgholder{
         height:148px;
       }
-      .row .good:nth-child(2){
-        margin-left:4px;
-      }
       .good{
         width:148px;
-        margin-left:6px;
         display:inline-block;
         text-decoration:none;
         border:1px solid #A7A7A7;
       }
       .row{
         margin:6px 0;
+        display: flex;
+        justify-content: space-between;
       }
+       .row:before {content: ''; }
+       .row:after {content: '';}
       .price,.des{
         display:block;
         font-size:12px;
@@ -71,62 +70,39 @@
        font-style: normal;
       }
       @media only screen and (min-width:640px){
-      .container{
-        margin:0 auto;
-        max-width:640px;
-        padding:0 6px;
-        width:100%;
-        text-align:left;
-      }
-      img{
-        width:298px;
-        height:298px;
-      }
-      .imgholder{
-        height:298px;
-      }
-      .good{
-        width:298px;
-        margin-left:13px;
-        display:inline-block;
-        text-decoration:none;
-        border:1px solid #A7A7A7;
-      }
-      .row{
-        display:block;
-        margin:13px 0;
-      }
-      .price,.des{
-        display:block;
-        font-size:12px;
-        padding:0 24px;
-        vertical-align:top;
-      }
-      .des{
-        color:#5f5f5f;
-        padding-top:20px;
-        padding-bottom:20px;
-        font-size:30px;
-      }
-      .price{
-        background-color:#4ac2ff;
-      }
-      .sale{
-       height:72px;
-       line-height:72px;
-       text-align:center;
-      }
-      .sale .symbol{
-       color:#9ae2ff;
-       font-size:30px;
-      }
-      .sale .num{
-       color:#FFF;
-       font-size:40px;
-       text-align:center;
-       font-family: verdana,arial;
-       font-style: normal;
-      }
+        img{
+          width:298px;
+          height:298px;
+        }
+        .imgholder{
+          height:298px;
+          width:298px;
+        }
+        .good{
+          width:298px;
+        }
+        .row{
+          margin:13px 0;
+        }
+        .price,.des{
+          font-size:12px;
+          padding:0 24px;
+        }
+        .des{
+          padding-top:20px;
+          padding-bottom:20px;
+          font-size:30px;
+        }
+        .sale{
+         height:72px;
+         line-height:72px;
+        }
+        .sale .symbol{
+         font-size:30px;
+        }
+        .sale .num{
+         font-size:40px;
+        }
       }
     </style>
   </head>
