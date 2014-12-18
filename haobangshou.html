@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>精品推荐</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <style type="text/css" media="all">
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+    </style>
+    <style type="text/css" media="all">
+      body{
+        text-align:center;
+        font-family:STHeiti,"Microsoft YaHei", tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+      }
+      .container{
+        margin:0 auto;
+        width:100%;
+        text-align:left;
+      }
+      img{
+        width:148px;
+        height:148px;
+      }
+      .imgholder{
+        height:148px;
+      }
+      .good{
+        width:148px;
+        display:inline-block;
+        text-decoration:none;
+        border:1px solid #A7A7A7;
+      }
+      .row{
+        margin:6px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+       .row:before {content: ''; }
+       .row:after {content: '';}
+      .price,.des{
+        display:block;
+        font-size:12px;
+        padding:0 12px;
+        vertical-align:top;
+      }
+      .des{
+        color:#5f5f5f;
+        line-height:1.1em;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size:15px;
+      }
+      .price{
+        background-color:#4ac2ff;
+      }
+      .sale{
+       height:36px;
+       line-height:36px;
+       text-align:center;
+      }
+      .sale .symbol{
+       color:#9ae2ff;
+       font-size:15px;
+      }
+      .sale .num{
+       color:#FFF;
+       font-size:20px;
+       text-align:center;
+       font-family: verdana,arial;
+       font-style: normal;
+      }
+      @media only screen and (min-width:640px){
+        img{
+          width:298px;
+          height:298px;
+        }
+        .imgholder{
+          height:298px;
+          width:298px;
+        }
+        .good{
+          width:298px;
+        }
+        .row{
+          margin:13px 0;
+        }
+        .price,.des{
+          font-size:12px;
+          padding:0 24px;
+        }
+        .des{
+          padding-top:20px;
+          padding-bottom:20px;
+          font-size:30px;
+        }
+        .sale{
+         height:72px;
+         line-height:72px;
+        }
+        .sale .symbol{
+         font-size:30px;
+        }
+        .sale .num{
+         font-size:40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+    </div>
+    <script type="text/tmpl" id="tmpl">
+      <a class="good" href="<%link%>">
+          <div class="imgholder">
+            <img src="<%imglink%>" alt="">
+          </div>
+          <div class="price">
+              <div class="sale">
+                <span class="symbol">￥</span>
+                <span class="num"><%sale%></span>
+               </div>
+          </div>
+          <div class="des"><%des%></div>
+      </a>
+    </script>
+    <script>
+var qudao_data = [
+{"link":"http://detail.koudaitong.com/show/goods?alias=19n3wrg21","imglink":"http://imgqn.koudaitong.com/upload_files/2014/12/10/FjohTYDVBxPCYPtI1mbde4cVtVQg.jpg!580x580.jpg","des":"Aircleve基础滤网","sale":"180.00","origin":"225.00"},
+{"link":"http://detail.koudaitong.com/show/goods?alias=hqqz9ly3","imglink":"http://imgqn.koudaitong.com/upload_files/2014/12/09/Ft3ZEj60t72aKTuKg6xJcQJH3UBH.jpg!580x580.jpg","des":"首款车载智能净化寻车防盗一体式净化器","sale":"1080.00","origin":"1280.00"},
+{"link":"http://detail.koudaitong.com/show/goods?alias=1ev3j3kn7","imglink":"http://imgqn.koudaitong.com/upload_files/2014/12/09/Fu-i7aYASS9k5n_oSfuTkvAWlVh9.jpg!580x580.jpg","des":"卡仕达云径2智能后视镜导航","sale":"2880.00","origin":"2880.00"},
+{"link":"http://detail.koudaitong.com/show/goods?alias=1fvync2pz","imglink":"http://imgqn.koudaitong.com/upload_files/2014/12/10/Fnc0o2Su-qsv0vaMfqrlFEG94GTh.jpg!580x580.jpg","des":"卡仕达  安霸A7高清夜视行车记录仪","sale":"888.00","origin":"1110.00"}
+]
+
+var data = {
+  ios: [{
+    link: 'http://item.taobao.com/item.htm?id=36067877540',
+    imglink: 'http://img01.taobaocdn.com/bao/uploaded/i1/10800043045868330/T1h9k2FbpdXXXXXXXX_!!0-item_pic.jpg_430x430.jpg',
+    des: '特价 双IC芯片方案 10.8V11.1V12V 12.6V2A锂电池充电器 充满变灯',
+    origin: '15.00',
+    sale: '14.00'
+  }, {
+    link: 'http://item.taobao.com/item.htm?id=38273848454',
+    imglink: 'http://img01.taobaocdn.com/bao/uploaded/i1/T1yHPWFiBxXXXXXXXX_!!0-item_pic.jpg_430x430.jpg',
+    des: '先科 带开关一拖三点烟器 汽车双USB一分三电源转换器 车载充电器',
+    origin: '90.00',
+    sale: '36.00'
+  }],
+  android: [{
+    link: 'http://item.taobao.com/item.htm?id=36067877540',
+    imglink: 'http://img01.taobaocdn.com/bao/uploaded/i1/10800043045868330/T1h9k2FbpdXXXXXXXX_!!0-item_pic.jpg_430x430.jpg',
+    des: '特价 双IC芯片方案 10.8V11.1V12V 12.6V2A锂电池充电器 充满变灯',
+    origin: '15.00',
+    sale: '14.00'
+  }, {
+    link: 'http://item.taobao.com/item.htm?id=38273848454',
+    imglink: 'http://img01.taobaocdn.com/bao/uploaded/i1/T1yHPWFiBxXXXXXXXX_!!0-item_pic.jpg_430x430.jpg',
+    des: '先科 带开关一拖三点烟器 汽车双USB一分三电源转换器 车载充电器',
+    origin: '90.00',
+    sale: '36.00'
+  }],
+  def: [{
+    link: 'http://baidu.com',
+    imglink: 'http://dummyimage.com/150x100/b3b1b3/ffffff.png&text=ooo',
+    des: '先科 带开关 一拖三点烟器汽车双USB电源一拖二分配器 车载点烟器',
+    origin: '72.00-84.00',
+    sale: '36.00-42.00'
+  }, {
+    link: 'http://baidu.com',
+    imglink: 'http://dummyimage.com/150x100/b3b1b3/ffffff.png&text=ooo',
+    des: '先科 带开关 一拖三点烟器汽车双USB电源一拖二分配器 车载点烟器',
+    origin: '72.00-84.00',
+    sale: '36.00-42.00'
+  }]
+}
+
+var browser = (function() {
+  var u = navigator.userAgent
+  return {
+    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1
+  }
+})()
+
+function tpl(tmpl, data) {
+  return tmpl.replace(/<%(.+?)%>/g, function(all, key) {
+    return data[key] ? data[key] : ''
+  })
+}
+
+for(var key in data){
+  for(var k=qudao_data.length-1; k >=0; k-- ) {
+    data[key].unshift(qudao_data[k])
+  }
+}
+
+var html = ''
+var dataKey = 'def'
+if (browser.ios) {
+  dataKey = 'ios'
+} else if (browser.android) {
+  dataKey = 'android'
+}
+
+var tmpl = document.getElementById('tmpl').innerText
+for(var i =0; i < data[dataKey].length; i+=2) {
+  html += '<div class="row">'
+  html += tpl(tmpl, data[dataKey][i])
+  html += tpl(tmpl, data[dataKey][i+1])
+  html += '</div>'
+}
+
+document.getElementById('container').innerHTML = html
+    </script>
+  </body>
+</html>
+
