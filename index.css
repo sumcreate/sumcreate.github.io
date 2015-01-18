@@ -591,6 +591,14 @@ body {
   color:#0099ff;
 }
 
+#download-area.aircleve{
+  width:1000px;
+  height:657px;
+  margin:20px auto;
+  background: url(./imgs/aircleve-phones.png) top right no-repeat;
+  color:#0099ff;
+}
+
 #download-area .title{
   font-size:48px;
   font-weight:bold;
